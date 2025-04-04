@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     width: 100%;
+     box-sizing: border-box;
+}
+.card{
+    border: .5px solid gray;
+    width: 600px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 380px;
+    padding: 10px;
+    box-shadow: 2px 5px 20px 3px rgba(0, 0, 0, 0.2);
+}
+/* .card-body{
+    box-shadow: 2px 5px 20px 3px rgba(0, 0, 0, 0.2);
+} */
+.buttons{
+    width: 250px;
+    color: white;
+    background-color: black;
+    height: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.forms{
+    padding-left: 100px;
+}
+.productdisplay{
+    color: darkgreen;
+    font-weight: bolder;
+    text-align: center;
+    /* text-decoration:underline; */
+}

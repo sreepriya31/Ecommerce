@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.addpdt{
+    text-align: center;
+    color: darkgreen ;
+}
+.card{
+    display: block;
+    margin:auto;
+    margin-bottom: 40px;
+    width: 500px;
+    box-shadow: 2px 5px 20px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    padding: 20px;
+    background-image: url('/static/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card .card-body
+{
+    display: block;
+    margin:auto;
+    
+}
+
+input{
+    display: block;
+    margin:auto;
+
+    width: 360px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7ece7;
+    color:rgb(26, 16, 16);
+    font-size: medium;
+    padding: 10px;
+
+}
+.inputs{
+    padding-top: 10px;
+}

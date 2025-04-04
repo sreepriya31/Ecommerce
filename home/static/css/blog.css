@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     width: 100%;
+     box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+.hero img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.company-info {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background: rgba(134, 202, 170, 0.6); */
+    background-image: url('/static/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.company-info img{
+    height: 150px;
+    width: 800px;
+}
+/* ============================================ */
+.content{
+border: .5px solid gray;
+ width: 840px;
+ margin-left: 250px;
+ padding: 30px;
+ margin-bottom: 50px;
+ box-shadow: 2px 15px 20px 3px rgba(0, 0, 0, 0.2);
+ box-sizing: border-box;
+ border-radius: 15px;
+}
+.content p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

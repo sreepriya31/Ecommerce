@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     width: 100%;
+     box-sizing: border-box;
+}
+.car{
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-align: center;
+}

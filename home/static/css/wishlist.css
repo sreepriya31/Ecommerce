@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wish{
+    padding-top: 20px;
+    color:darkgreen;
+    font-weight: bolder;
+    text-align: center;
+   
+}
+.content{
+    border: .5px solid gray;
+    width: 540px;
+    margin-left: 420px;
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    box-shadow: 2px 15px 20px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.content p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.imm{
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.remov{
+    width: 100px;
+    color: white;
+    margin-left: 20px;
+    background-color: red;
+    border-radius: 40px;
+}
+.remov a{
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}

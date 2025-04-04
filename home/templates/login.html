@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+login
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+
+<h2 class="productdisplay">Login</h2>
+
+
+{% if er %}
+          <div class="alert alert-danger" role="alert" style="margin-top:20px; width:300px;">
+            {{er}}
+          </div>
+{% endif %}
+
+<div class="box">
+<div class="boxcard">
+    <form  method="POST" class="forms">
+        {% csrf_token %}
+            <input type="text" name="uname" placeholder="username" class="inputs"><br><br>
+            <input type="password" name="password" placeholder="Password" class="inputs"><br><br>
+            <button class="buttons">Login</button>
+    </form>
+    <div class="acc">
+        <p>New user?</p><a href="/register">Register here!!</a>
+    </div>
+</div>
+<img src="{% static 'images/stamp.jpeg' %}" alt="" class="image">
+</div>
+
+
+{% endblock %}
