@@ -12,3 +12,44 @@ body{
     font-weight: bolder;
     text-align: center;
 }
+.content{
+    border: .5px solid gray;
+    width: 540px;
+    margin-left: 420px;
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    box-shadow: 5px 15px 20px 10px rgba(5, 121, 5, 0.2);
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.content h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+ 
+}
+.pay{
+    background-color: darkgreen;
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+}
+.pay a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tables{
+    width: 900px;
+    display: block;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px 20px 10px rgba(5, 121, 5, 0.2);
+    box-sizing: border-box;
+    border-radius: 15px;
+}

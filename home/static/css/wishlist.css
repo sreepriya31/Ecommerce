@@ -9,7 +9,7 @@ body{
 
 .wish{
     padding-top: 20px;
-    color:darkgreen;
+    color:black;
     font-weight: bolder;
     text-align: center;
    
@@ -44,5 +44,4 @@ body{
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    
 }

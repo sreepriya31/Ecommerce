@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,7 @@ MEDIA_ROOT = BASE_DIR/'uploads'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# razorpay
+RAZORPAY_KEY_ID ='your_key_id'
+RAZORPAY_KEY_SECRET = 'your_key_secret'

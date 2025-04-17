@@ -10,9 +10,7 @@ from django.core.paginator import Paginator
 
 def frontpage(request):
 
-    # x=Product.objects.all()
-    y=Category.objects.all()  
-# 
+    y=Category.objects.all()   
 
     p=request.GET.get('pag')
     print(p)
@@ -166,7 +164,7 @@ def profile_view(request):
             profile = form.save(commit=False)
             profile.us = request.user  # Assign the logged-in user to the profile
             profile.save()
-            return redirect('/')
+            return redirect('profile_page')
 
     else:
         form = ProfileForm(instance=profile) if profile else ProfileForm()
@@ -206,8 +204,11 @@ def wishlist_view(request):
 
 # ====================cart========================================
 
-from django.shortcuts import get_object_or_404
 from .models import  Cart
+import razorpay
+from django.conf import settings
+from django.shortcuts import get_object_or_404
+
 
 @login_required
 def add_to_cart(request, product_id):
@@ -227,9 +228,35 @@ def cart_view(request):
 
     return render(request, 'cart.html', {'cart_items': cart_items, 'total_price': total_price})
 
+    # Razorpay client setup
+    # client = razorpay.Client(auth=(settings.RAZORPAY_KEY_ID, settings.RAZORPAY_KEY_SECRET))
+    # payment = client.order.create({
+    #     'amount': int(total_price * 100),  # Convert to paise
+    #     'currency': 'INR',
+    #     'payment_capture': '1'
+    # })
+
+    # return render(request, 'cart.html', {
+    #     'cart_items': cart_items,
+    #     'total_price': total_price,
+    #     'payment': payment,
+    #     'razorpay_key_id': settings.RAZORPAY_KEY_ID
+    # })
+
+
+
 @login_required
 def remove_from_cart(request, cart_id):
     cart_item = get_object_or_404(Cart, id=cart_id, us=request.user)  
     cart_item.delete()
     return redirect('cart_view')
-    
+
+
+# ===============================================================================
+
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
+def payment_success(request):
+    Cart.objects.filter(us=request.user).delete() # Clear cart after payment
+    return render(request, 'success.html')

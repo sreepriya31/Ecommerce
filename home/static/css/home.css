@@ -30,6 +30,13 @@ body{
     width: 100px;
     height: 100px;
     border-radius: 15px;
+    transition: background-color 0.3s;
+}
+.cardcat :hover {
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
 }
 .cardcattitle{
     text-align: center;
@@ -155,4 +162,8 @@ text-decoration: none;
     width: 20px;
     
     height:30px
+}
+/* ======================== */
+.x{
+    color: red;
 }

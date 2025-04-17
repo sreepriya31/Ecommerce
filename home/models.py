@@ -58,7 +58,6 @@ class Blog(models.Model):
         return self.title
 
 # ============================================
-
 class Cart(models.Model):
     us = models.ForeignKey(User, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)

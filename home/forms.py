@@ -24,3 +24,9 @@ class ProfileForm(forms.ModelForm):
     class Meta:
         model=Profile
         exclude=['us']
+        widgets={ 
+            'phone':forms.TextInput(attrs={'class':'form-control'}),
+            'email':forms.EmailInput(attrs={'class':'form-control'}),
+            'address':forms.TextInput(attrs={'class':'form-control'}),
+
+        }

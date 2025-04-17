@@ -34,7 +34,7 @@ urlpatterns = [
     path('register/', uregisterfn),
     path('login/',loginfn),
     path('logout',logoutfn),
-    path('profile/', profile_view),
+    path('profile/', profile_view , name='profile_page'),
      
     path('wishlist/', wishlist_view, name='wishlist_page'),
     path('add-to-wishlist/<int:product_id>/', add_to_wishlist, name='add_to_wishlist'),
@@ -43,6 +43,8 @@ urlpatterns = [
     path('cart/', cart_view, name='cart_view'),
     path('add-to-cart/<int:product_id>/', add_to_cart, name='add_to_cart'),
     path('remove-from-cart/<int:cart_id>/', remove_from_cart, name='remove_from_cart'),
+
+    path('payment/success/dummy', payment_success, name='payment_success'),
 
     path('blog',blogfn),
     path('search',searchfn),

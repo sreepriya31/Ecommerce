@@ -11,9 +11,11 @@ body{
     width: 600px;
     margin-top: 40px;
     margin-bottom: 30px;
-    margin-left: 380px;
+    margin-left: 80px;
     padding: 10px;
     box-shadow: 2px 5px 20px 3px rgba(0, 0, 0, 0.2);
+    
+    
 }
 /* .card-body{
     box-shadow: 2px 5px 20px 3px rgba(0, 0, 0, 0.2);
@@ -25,14 +27,93 @@ body{
     height: 40px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: auto;
+    transition: background-color 0.3s;
 }
-
+.buttons:hover {
+    background-color: #005500;
+}
 .forms{
     padding-left: 100px;
+
 }
 .productdisplay{
     color: darkgreen;
     font-weight: bolder;
     text-align: center;
     /* text-decoration:underline; */
+    
+}
+.cardbody{
+    /* box-shadow: 2px 5px 20px 3px rgba(0, 0, 0, 0.2); */
+    border-radius: 15px;
+    padding: 10px;
+    width: 540px;
+    /* border: 1px solid darkgreen; */
+}
+.cardbody p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline;
+}
+.cardbody h5{
+    display: inline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding-right: 2px;
+    transition: background-color 0.3s;
+}
+.cardbody :hover {
+    background-color: black;
+    color: white;
+}
+.profilebody{
+    box-shadow: 2px 5px 20px 3px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid darkgreen;
+    padding-top: 5px;
+}
+/* ==================================== */
+.forms {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2.text-success {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 15px;
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 5px;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+/* =================================== */
+.cardbox{
+    border: 1px solid gray;
+    padding: 10px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
 }
